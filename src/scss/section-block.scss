@@ -1,0 +1,197 @@
+//-----Блок секції 'Lorem Ipsum Dolorem'-------//
+.section-block {
+	width:100%;
+	height: 100%;
+	background-color: $olive__1;
+	// padding: 67px 8px 110px 71px;
+	// .section-block__container
+	// .section-block__items
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap:nowrap;
+		padding: 67px 0px 110px 0px;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__items {
+			display: flex;
+			justify-content: center;
+			flex-wrap:wrap-reverse;
+			padding: 40px 0px 40px 0px;
+		}
+	}
+}
+
+//--------Блок заголовка із параграфом та картинкою-------//
+.items {
+	// .items__block-item
+	&__block-item {
+		display: flex;
+		flex-direction: column;
+	}
+	// .items__block-video
+	&__block-video {
+		display:flex;
+		position: relative;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__block-item {
+			margin-top: 40px;
+			// margin-bottom: 30px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__block-item {
+			margin-top: 35px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__block-item {
+			margin-top: 30px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__block-item {
+			margin-top: 25px;
+		}
+	}
+}
+//------Блок заголовка із параграфом-------//
+.block {
+	// .block__title
+	&__title {
+		font-family: $fontOperetta8;
+		font-size: 60px;
+		line-height: 60px;
+		font-style: normal;
+		font-weight: 600;
+		color: $green_haki;
+		max-width: 531px;
+	}
+	// .block__content
+	&__content {
+		font-family:$fontHelvetica;
+		font-size: 18px;
+		line-height: 26px;
+		font-style: normal;
+		font-weight: 400;
+		margin-top: 20px;
+		color: $green_haki;
+		max-width: 649px;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__title {
+			font-size: 50px;
+			line-height: 53px;
+			max-width: 590px;
+		}
+		// .block__content
+		&__content {
+			font-family:$fontHelvetica;
+			font-size: 17.5px;
+			line-height: 25px;
+			margin-top: 22px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__title {
+			font-size: 45px;
+			line-height: 40px;
+			max-width: 590px;
+		}
+		// .block__content
+		&__content {
+			font-family:$fontHelvetica;
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 18px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__title {
+			font-size: 45px;
+			line-height: 40px;
+			max-width: 590px;
+		}
+		// .block__content
+		&__content {
+			font-family:$fontHelvetica;
+			font-size: 17px;
+			line-height: 21px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+			max-width: 590px;
+		}
+		// .block__content
+		&__content {
+			font-family:$fontHelvetica;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+.intro {
+	max-width: 100%;
+	overflow: hidden;
+	/*----------PC-------------*/
+}
+.intro::after {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(78, 74, 51, 0.5), rgba(78, 74, 51, 0.5)),;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}
+
+.button-play {
+	position: absolute;
+	top:45%;
+	left:45%;
+	background: transparent;
+	z-index: 3;
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		position: absolute;
+		top:35%;
+		left:45%;
+	}
+}
+
+.video{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

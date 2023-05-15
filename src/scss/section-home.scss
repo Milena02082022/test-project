@@ -1,0 +1,750 @@
+//-----Секція Home (контейнер із обмежуючим контейнером)------//
+.section-home {
+	width:100%;
+	height: 100%;
+	background-color: $olive__2;
+	// .section-home__container
+}
+//-----Блок секції Home( with swiper and card)------//
+.section-home-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	// .section-home-block__slider
+	&__slider {
+		width: 790px;
+		height: 1021px;
+		margin-left: -15.6%;
+		position: relative;
+	}
+	// .section-home-block__item-article
+	&__item-article {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 50%;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		display: flex;
+		flex-direction: row;
+		justify-content:center;
+		flex-wrap: wrap;
+		&__slider {
+			width: 770px;
+			height: 1000px;
+			margin-left: 0%;
+			position: relative;
+		}
+		// .section-home-block__item-article
+		&__item-article {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 50%;
+			margin-bottom: 40px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__slider {
+			width: 760px;
+			height: 940px;
+			margin-left: 0%;
+			position: relative;
+		}
+		// .section-home-block__item-article
+		&__item-article {
+			margin-top: 40px;
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 50%;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__slider{
+		width: 690px;
+    	height: 500px;
+    	margin-left: -21%;
+    	position: relative;
+		}
+		// .section-home-block__item-article
+		&__item-article {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 50%;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__slider {
+			width: 340px;
+			height: 390px;
+			margin-left: -5%;
+			position: relative;
+		}
+		// .section-home-block__item-article
+		&__item-article {
+			margin-top: 25px;
+			display: flex;
+			flex-direction: column;
+			flex: 1 0 50%;
+		}
+	}	
+}
+//----Swiper-----------------------//
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+//Свайпер( з великою картинкою)//
+.mySwiper2 {
+	width: 100%;
+	height: 100%;
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		width:95%;
+		height: 100%;
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		width:92%;
+		height: 100%;
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		width:85%;
+		height: 100%;
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		width:80%;
+		height: 100%;
+	}
+}
+//Свайпер( маленький контейнер)//
+.mySwiper {
+	width: 289px;
+	height: 83px;
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		width: 289px;
+		height: 83px;
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		width: 289px;
+		height: 83px;
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		width: 289px;
+		height: 83px;
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		width: 83px;
+		height: 83px;
+	}
+}
+.mySwiper .swiper-slide-thumb-active {
+	opacity: 1;
+}
+.button-next .button-prev {
+	position: absolute;
+	bottom: 25px;
+}
+
+//-----------Картка товару------//
+.item-article {
+	// .item-article__block
+	&__block {
+		width: 600px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		margin-left: 92px;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__block {
+			width: 500px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			margin-left: 140px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__block {
+			width: 500px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 19px;
+			margin-left: 92px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__block {
+			width: 490px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			margin-left: 50px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__block {
+			width: 300px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			margin-left: 15px;
+		}
+	}
+}
+//-----------Картка товару (блок із підблоками)------//
+.block {
+	// .block__top
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 26px 48px;
+		gap: 10px;
+		background-color:  $olive__1;
+	}
+	// .block__titles
+	&__titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		font-family: 'Operetta 8';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 46px;
+		line-height: 45px;
+		text-transform: uppercase;
+		color: #4E4A33;
+	}
+	// .block__ratings
+	&__ratings {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 8px;
+	}
+	// .block__paragraphs
+	&__paragraphs {
+		display: flex;
+		flex-direction: column;
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		color: #4E4A33;	
+	}
+	// .block__contents
+	&__contents {
+		display: flex;
+	}
+	// .block__grams
+	&__grams {
+		display: flex;
+	}
+	// .block__prices
+	&__prices {
+		display: flex;
+	}
+	// .block__numbers
+	&__numbers {
+		display: flex;
+	}
+	// .block__pays
+	&__pays {
+		display: flex;
+	}
+	// .block__descriptions
+	&__descriptions {
+		display: flex;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__titles {
+			font-size: 42px;
+			line-height: 42px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__titles {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__titles {
+			font-size: 37px;
+			line-height: 37px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__top {
+			padding: 18px 28px;
+		}
+		&__titles {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		&__paragraphs {
+			font-size: 16px;
+			line-height: 16px;	
+		}
+		&__ratings {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 8px;
+		}
+	}
+}
+//----Верхній підблок картки товару із цитатою і автором цитати---------//
+.top {
+	// .top__quote
+	&__quote {
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	// .top__author
+	&__author {
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #585858;
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__quote {
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+}
+//----Підблок рейтингу продукції карти товару---------//
+.ratings {
+	// .ratings__number
+	&__number {
+		display: flex;
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 130%;
+	}
+	// .ratings__stars
+	&__stars {
+		display: flex;
+		flex-direction: row;
+		padding: 0px;
+		gap: 5px;
+	}
+	// .ratings__text
+	&__text {
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 130%;
+		display: flex;
+	}
+}
+//----Блок вмісту продукції карти товару---------//
+.contents {
+	// .contents__content-item-block
+	&__content-item-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0;
+		gap:20px;
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__content-item-block {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0;
+			gap:20px;
+		}
+	}
+}
+.content-item-block {
+	// .content-item-block__content
+	&__content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0;
+		gap: 3px;
+	}
+}
+.content {
+	// .content__text
+	&__text {
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 130%;
+	}
+}
+
+//----Підблок descriptions карти товару---------//
+.descriptions {
+	// .descriptions__description-item-block
+	&__description-item-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0px;
+		gap: 20px;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__description-item-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding: 0px;
+			gap: 15px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__description-item-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding: 0px;
+			gap: 10;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__description-item-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0px;
+			gap: 20px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__description-item-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0px;
+			gap: 10px;
+		}
+	}
+}
+.description-item-block {
+	// .description-item-block__description
+	&__description {
+		width: 133px;
+		height: 103px;
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+		gap: 10px;
+	}
+}
+.description {
+	// .description__icon
+	&__icon {
+		display: flex;
+	}
+	// .description__text
+	&__text {
+		display: flex;
+		font-family: $fontHelvetica;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18.2px;
+	}
+}
+//------------Блок grams карти товару------//
+.grams {
+	// .grams__gram-block
+	&__gram-block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px 0px 6px;
+		gap: 7px;
+	}
+}
+.gram-block {
+	// .gram-block__top
+	&__top {
+		display: flex;
+		font-family: $fontOperetta8;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+	&__bottom{
+		display: flex;
+	}
+}
+.bottom {
+	// .bottom__block-items
+	&__block-items {
+		display: flex;
+	}
+}
+.block-items {
+	// .block-items__item-block
+	&__item-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px;
+		gap: 10px;
+	}
+
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__item-block {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0px;
+			gap: 10px;
+		}
+	}
+}
+.btn-grams {
+	padding: 4px 16px;
+	gap: 30px;
+	background: #FBF0DF;
+	border: 1px solid $green__1;
+	transition: all 0.2s ease 0.125s;
+	font-family: $fontHelvetica;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4E4A33;
+}
+.active, .btn-grams:hover {
+	background-color:#CFD3B8;
+}
+.text{
+	font-family: $fontHelvetica;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 130%;
+	display: flex;
+	align-items: center;
+	color: #4E4A33;
+}
+//----Блок ціни (старої ціни і ціни зі знижкою) карти товару---------//
+.prices {
+	// .prices__price-block
+	&__price-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 0px 0px 6px;
+		gap: 22px;
+	}
+}
+.price-block {
+	// .price-block__old-price
+	&__old-price {
+		display: flex;
+		font-family: $fontOperetta8;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 24px;
+		text-decoration-line: line-through;
+		color: #8F8F8F;
+	}
+	// .price-block__new-price
+	&__new-price {
+		display: flex;
+		font-family: $fontOperetta8;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 24px;
+	}
+}
+//------Підблок "Кількість товарів" карти товару-----//
+.numbers-block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 20px;
+
+	// .numbers-block__quantity
+	&__quantity {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 4px 16px;
+		gap: 30px;
+		border: 2px solid $green__1;
+		background: transparent;
+	}
+	// .numbers-block__button-buy
+	&__button-buy {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 4px 50px;
+		gap: 40px;
+		background: $orange;
+	}
+	// .numbers-block__button-like
+	&__button-like {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 16px;
+		gap: 30px;
+		border: 2px solid $green__1;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+	// .numbers-block__button-buy
+	&__button-buy {
+		padding: 4px 20px;
+	}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__button-buy {
+			padding: 4px 20px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__button-buy {
+			padding: 4px 15px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		&__button-buy {
+			padding: 4px 10px;
+		}
+	}
+}
+//Стилі для кількості товару
+.quantity {
+	background: transparent;
+}
+.quantity select {
+	padding: 4px 16px;
+	font-family: $fontHelvetica;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	background: transparent;
+}
+//Стилі для кнопки btn-buy //
+.btn-buy {
+	background: transparent;
+	font-family: $fontOperetta8;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: $white;	
+	transition: all 0.3s ease 0.125s;
+	&:hover{
+		color:#4E4A33;
+	}
+}
+//Стилі для кнопки btn-heart //
+.btn-heart {
+	background: transparent;
+}
+
+//------Підблок Pays карти товару------//
+.pays-block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 6px;
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+		gap: 8px;
+	}
+}
+.pay-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 32px;
+	background: #FBF0DF;
+	border: 1px solid #A39F8A;
+	border-radius: 1px;
+}
+
+
+

@@ -1,0 +1,40 @@
+@import "fonts";
+@import "nullstyle";
+@import "vars";
+@import "section-block2";
+@import "section-block";
+@import "section-home";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../vendor/navi.scss";
+@import "../vendor/swip.scss";
+body{
+	font-size:16px;
+	font-family: $fontHelvetica;
+	color: $green_haki;
+	font-weight: 600;
+	font-style: normal;
+	background-color: $olive__2;
+}
+
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+.main{
+	flex:1 0 auto;
+}
+/*-----------обмежуючий контейнер------------------------*/
+._container{
+	max-width: 1424px;
+	margin: 0px auto;
+	padding: 0px 20px;
+}
+
+
+
+
+
+

@@ -1,0 +1,231 @@
+//-----Блок секції 'Productbeschrijving'-------//
+.section-block2 {
+	width:100%;
+	height: 100%;
+	background-color: $olive__2;
+	padding: 57px 0px 52px 0px;
+}
+.block{
+	flex-wrap:nowrap;
+}
+//-------Заголовок секції 'Productbeschrijving'-------//
+.block {
+	&__title {
+		&_title {
+			font-family: $fontOperetta8;
+			font-size: 60px;
+			line-height: 60px;
+			font-style: normal;
+			font-weight: 600;
+			color: $green_haki;
+			margin-bottom: 49px;
+		}
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__title {
+			&_title {
+				font-size: 55px;
+				line-height: 55px;
+				margin-bottom: 45px;
+			}
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__title {
+			// .block__title_title
+			&_title {
+				font-size: 45px;
+				line-height: 40px;
+				margin-bottom: 38px;
+			}
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__title {
+			&_title {
+				font-size: 37px;
+				line-height: 30px;
+				margin-bottom: 33px;
+			}
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__title {
+			&_title {
+				font-size: 28px;
+				line-height: 30px;
+				margin-bottom: 29px;
+			}
+		}
+	
+	}
+}
+//----Блок параграфів------//
+.content-items {
+	// .content-items__item
+	&__item {
+		display: block;
+	}
+	&__item:not(:last-child){
+		margin-bottom: 37px;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__item {
+			display: block;
+		}
+		&__item:not(:last-child){
+			margin-bottom: 33px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__item {
+			display: block;
+		}
+		&__item:not(:last-child){
+			margin-bottom: 30px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__item {
+			display: block;
+		}
+		&__item:not(:last-child){
+			margin-bottom: 28px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__item {
+			display: block;
+		}
+		&__item:not(:last-child){
+			margin-bottom: 25px;
+		}
+	}
+}
+.item {
+	// .item__title
+	&__title {
+		font-family: $fontHelvetica;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 26px;
+		color:#4E4A33;
+	}
+	// .item__text
+	&__text {
+		font-family: $fontHelvetica;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		color: $green_haki;
+	}
+	/*----------PC-------------*/
+	@media (max-width: 1080px){
+		&__title {
+			font-size: 18px;
+			line-height: 25px;
+		}
+		// .item__text
+		&__text {
+			font-size: 17.5px;
+			line-height: 25px;
+		}
+	}
+	/*----------Table-------------*/
+	@media (max-width: 991.98px){
+		&__title {
+			font-size: 17.5px;
+			line-height: 22px;
+		}
+		// .item__text
+		&__text {
+			font-size: 17px;
+			line-height: 22px;
+		}
+	}
+	/*----------Mobile-------------*/
+	@media (max-width: 767.98px){
+		&__title {
+			font-size: 17px;
+			line-height: 21px;
+		}
+		// .item__text
+		&__text {
+			font-size: 16.5px;
+			line-height: 21px;
+		}
+	}
+	/*----------Mobile-small-------------*/
+	@media (max-width: 479.98px){
+		&__title {
+			font-size: 17px;
+			line-height: 20px;
+		}
+		// .item__text
+		&__text {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		
+	}
+}
+//--------Блок кнопки Show more-------//
+.hidden-content_bottom {
+	margin-bottom: 37px;
+}
+.hidden-content{
+	display: none;
+}
+.buttons {
+	// .buttons__button
+	&__button {
+		width: 208px;
+		height: 52px;
+		border: 2px solid #4E4A33;
+		background: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+		cursor: pointer;
+		color: $green_haki;
+		font-family: $fontOperetta8;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 44px;
+		text-transform: uppercase;
+		background-image: url("../img/arrow.svg");
+		background-repeat: no-repeat;
+		background-position: 87% 50%;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			border: 2px solid #ceb318;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
